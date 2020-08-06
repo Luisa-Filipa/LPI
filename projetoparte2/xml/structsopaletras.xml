@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structsopaletras" kind="struct" language="C++" prot="public">
+    <compoundname>sopaletras</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsopaletras_1af20d02e678ba0aeaf8727d747151baf0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int linha</definition>
+        <argsstring></argsstring>
+        <name>linha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="63" column="1" bodyfile="projeto.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsopaletras_1a4a2f44649af1dfbf8d13141d5a336455" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int coluna</definition>
+        <argsstring></argsstring>
+        <name>coluna</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="64" column="1" bodyfile="projeto.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsopaletras_1a9454709cf21201113145860ad2eb8631" prot="public" static="no" mutable="no">
+        <type><ref refid="structcelula" kindref="compound">CELL</ref> *</type>
+        <definition>CELL* pfirst</definition>
+        <argsstring></argsstring>
+        <name>pfirst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="65" column="1" bodyfile="projeto.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>celula</label>
+        <link refid="structcelula"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>sul</edgelabel>
+          <edgelabel>oeste</edgelabel>
+          <edgelabel>noroeste</edgelabel>
+          <edgelabel>sudoeste</edgelabel>
+          <edgelabel>norte</edgelabel>
+          <edgelabel>sudeste</edgelabel>
+          <edgelabel>nordeste</edgelabel>
+          <edgelabel>este</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>cache1</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>sopaletras</label>
+        <link refid="structsopaletras"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>pfirst</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>cache</label>
+        <link refid="structcache"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="projeto.h" line="62" column="1" bodyfile="projeto.h" bodystart="61" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structsopaletras_1a4a2f44649af1dfbf8d13141d5a336455" prot="public" virt="non-virtual"><scope>sopaletras</scope><name>coluna</name></member>
+      <member refid="structsopaletras_1af20d02e678ba0aeaf8727d747151baf0" prot="public" virt="non-virtual"><scope>sopaletras</scope><name>linha</name></member>
+      <member refid="structsopaletras_1a9454709cf21201113145860ad2eb8631" prot="public" virt="non-virtual"><scope>sopaletras</scope><name>pfirst</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

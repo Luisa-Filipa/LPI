@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Luisa/CLionProjects/projetoparte2/mergesort/mergesort.h
+stdio.h
+-
+stdlib.h
+-
+windef.h
+-
+
+C:/Users/Luisa/CLionProjects/projetoparte2/projeto.c
+projeto.h
+C:/Users/Luisa/CLionProjects/projetoparte2/projeto.h
+
+C:/Users/Luisa/CLionProjects/projetoparte2/projeto.h
+stdio.h
+C:/Users/Luisa/CLionProjects/projetoparte2/stdio.h
+malloc.h
+-
+math.h
+-
+stdlib.h
+C:/Users/Luisa/CLionProjects/projetoparte2/stdlib.h
+string.h
+C:/Users/Luisa/CLionProjects/projetoparte2/string.h
+strings.h
+C:/Users/Luisa/CLionProjects/projetoparte2/strings.h
+time.h
+C:/Users/Luisa/CLionProjects/projetoparte2/time.h
+mergesort/mergesort.h
+C:/Users/Luisa/CLionProjects/projetoparte2/mergesort/mergesort.h
+

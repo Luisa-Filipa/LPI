@@ -1,0 +1,1437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="projeto_8h" kind="file" language="C++">
+    <compoundname>projeto.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">strings.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="yes">mergesort/mergesort.h</includes>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="projeto_8c" local="yes">projeto.c</includedby>
+    <incdepgraph>
+      <node id="24">
+        <label>stdlib.h</label>
+      </node>
+      <node id="28">
+        <label>mergesort/mergesort.h</label>
+      </node>
+      <node id="27">
+        <label>string.h</label>
+      </node>
+      <node id="21">
+        <label>projeto.h</label>
+        <link refid="projeto_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>time.h</label>
+      </node>
+      <node id="23">
+        <label>math.h</label>
+      </node>
+      <node id="25">
+        <label>strings.h</label>
+      </node>
+      <node id="22">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structcache" prot="public">cache</innerclass>
+    <innerclass refid="structcelula" prot="public">celula</innerclass>
+    <innerclass refid="structsopaletras" prot="public">sopaletras</innerclass>
+    <innerclass refid="structpalavra" prot="public">palavra</innerclass>
+    <innerclass refid="structdicionario" prot="public">dicionario</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="projeto_8h_1a9073d3f0eb1bb70d10154b3e6f3481d7" prot="public" static="no">
+        <name>Max200</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="13" column="23" bodyfile="projeto.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a8672c066a2e8d053546bc93331890dc5" prot="public" static="no">
+        <name>MAX50</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="14" column="9" bodyfile="projeto.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a4533ea3a2d1c452fc858e74ee999ec2a" prot="public" static="no">
+        <name>LINHAS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="15" column="9" bodyfile="projeto.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a9db37cd75be1d2f3cfc2703673801cb0" prot="public" static="no">
+        <name>COLUNAS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="16" column="9" bodyfile="projeto.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a0aa21f9db66b913e77cf40d7ce302b44" prot="public" static="no">
+        <name>NORTE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="18" column="9" bodyfile="projeto.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a6c737b67b9d3c1aebfc532a70c2c3ee8" prot="public" static="no">
+        <name>NORDESTE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="19" column="9" bodyfile="projeto.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a9b58f4e2305a64f1faaa6abdfea4b8d8" prot="public" static="no">
+        <name>ESTE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="20" column="9" bodyfile="projeto.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a610ef6bbc01211d8522d74e9e2e9e2ec" prot="public" static="no">
+        <name>SUDESTE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="21" column="9" bodyfile="projeto.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a421292a5824a455f584f9eec456d88cb" prot="public" static="no">
+        <name>SUL</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="22" column="9" bodyfile="projeto.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a5cbc138cef98809b66a19fefba4d89a9" prot="public" static="no">
+        <name>SUDOESTE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="23" column="9" bodyfile="projeto.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a5da530101b855f00d4574478686e9c3f" prot="public" static="no">
+        <name>OESTE</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="24" column="9" bodyfile="projeto.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1aa8fc7289f6681e866290e756b69eb232" prot="public" static="no">
+        <name>NORDOESTE</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="25" column="9" bodyfile="projeto.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a5220f8759458689921e7a71c8b56d19a" prot="public" static="no">
+        <name>Fiename1</name>
+        <initializer>&quot;C:\\Users\\maria\\CLionProjects\\projetoparte2\\data\\dicionario.txt&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="27" column="10" bodyfile="projeto.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a8c7af36f2291e104ea7b6b0945826404" prot="public" static="no">
+        <name>Filename2</name>
+        <initializer>&quot;C:\\Users\\maria\\CLionProjects\\projetoparte2\\data\\sopaletras.txt&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="28" column="9" bodyfile="projeto.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a823c960ae29c6c5995ddd98605d5cea8" prot="public" static="no">
+        <name>Fiename3</name>
+        <initializer>&quot;C:\\Users\\maria\\CLionProjects\\projetoparte2\\data\\dicionariobin.bin&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="29" column="9" bodyfile="projeto.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a7805e840ad26705f4af63861f746f616" prot="public" static="no">
+        <name>Filename4</name>
+        <initializer>&quot;C:\\Users\\maria\\CLionProjects\\projetoparte2\\data\\sopaletrasbin.bin&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="30" column="9" bodyfile="projeto.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projeto_8h_1a33049a96c019eb4f502511740271db60" prot="public" static="no">
+        <name>Filename5</name>
+        <initializer>&quot;C:\\Users\\maria\\CLionProjects\\projetoparte2\\data\\palavrasguardadas.txt&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="31" column="9" bodyfile="projeto.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="projeto_8h_1a904bad1395f1a02437fb3c1a86533fed" prot="public" static="no">
+        <type>struct <ref refid="structcache" kindref="compound">cache</ref></type>
+        <definition>typedef struct cache CACHE</definition>
+        <argsstring></argsstring>
+        <name>CACHE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="projeto_8h_1a8245b2cec58f8420f103f6ad322bd8be" prot="public" static="no">
+        <type>struct <ref refid="structcelula" kindref="compound">celula</ref></type>
+        <definition>typedef struct celula CELL</definition>
+        <argsstring></argsstring>
+        <name>CELL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="projeto_8h_1a1d2e237c4545ede21a84b425b2b2df1e" prot="public" static="no">
+        <type>struct <ref refid="structsopaletras" kindref="compound">sopaletras</ref></type>
+        <definition>typedef struct sopaletras SOPALETRAS</definition>
+        <argsstring></argsstring>
+        <name>SOPALETRAS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="projeto_8h_1aa1eb7589d0bc4a43a9e72710b698cbce" prot="public" static="no">
+        <type>struct <ref refid="structpalavra" kindref="compound">palavra</ref></type>
+        <definition>typedef struct palavra PALAVRA</definition>
+        <argsstring></argsstring>
+        <name>PALAVRA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="projeto_8h_1ae4dcbea3859c02eaab192b9d4b78a974" prot="public" static="no">
+        <type>struct <ref refid="structdicionario" kindref="compound">dicionario</ref></type>
+        <definition>typedef struct dicionario DICIONARIO</definition>
+        <argsstring></argsstring>
+        <name>DICIONARIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="82" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="projeto_8h_1a3da0e8c833a5b1b16c1f221d69bf4fda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main_projeto2</definition>
+        <argsstring>()</argsstring>
+        <name>main_projeto2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="33" column="1" bodyfile="projeto.c" bodystart="6" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a651915921facb7eedb028c6f8f029b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void inserir_palavras</definition>
+        <argsstring>(DICIONARIO *cs)</argsstring>
+        <name>inserir_palavras</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref> *</type>
+          <declname>cs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>inserção manual do dicionario <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="85" column="1" bodyfile="projeto.c" bodystart="57" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1abd6c1bcab94bd08d9f8d2465896be931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imprimir_dicionario_manual</definition>
+        <argsstring>(DICIONARIO *dicionario)</argsstring>
+        <name>imprimir_dicionario_manual</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref> *</type>
+          <declname>dicionario</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funçaõ de imprimir o dicionario <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dicionario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="86" column="1" bodyfile="projeto.c" bodystart="80" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1aface952a1c34afab647f55a491d8ce18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void inserir_queue</definition>
+        <argsstring>(DICIONARIO *dicionario, PALAVRA *palavra)</argsstring>
+        <name>inserir_queue</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref> *</type>
+          <declname>dicionario</declname>
+        </param>
+        <param>
+          <type><ref refid="structpalavra" kindref="compound">PALAVRA</ref> *</type>
+          <declname>palavra</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>inserir queue <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dicionario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>palavra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="87" column="1" bodyfile="projeto.c" bodystart="94" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a96917a1f413432c52b347a63b131343a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpalavra" kindref="compound">PALAVRA</ref> *</type>
+        <definition>PALAVRA* imprimir_queue</definition>
+        <argsstring>(DICIONARIO *dicionario)</argsstring>
+        <name>imprimir_queue</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref> *</type>
+          <declname>dicionario</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>imprimir queue <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dicionario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="88" column="1" bodyfile="projeto.c" bodystart="111" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1aeaee8f1d444871f582a3312ec62a3249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void converter_maiusculas</definition>
+        <argsstring>(char *palavra)</argsstring>
+        <name>converter_maiusculas</name>
+        <param>
+          <type>char *</type>
+          <declname>palavra</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>converter minusculas a maiusclas <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>palavra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="89" column="1" bodyfile="projeto.c" bodystart="139" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a0ccb15e1f316a7c315a34b21bf3f974e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_dicionario_txt</definition>
+        <argsstring>(DICIONARIO *pcs)</argsstring>
+        <name>ler_dicionario_txt</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref> *</type>
+          <declname>pcs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ler fucheiro de texto dicionario <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pcs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="91" column="1" bodyfile="projeto.c" bodystart="152" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a54d520c5b27c2a95447caab809f7aae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int numero_palavras</definition>
+        <argsstring>()</argsstring>
+        <name>numero_palavras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>conta o numero de palavras <simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="92" column="1" bodyfile="projeto.c" bodystart="192" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1acf8906f3694c6bcda666ecc5498e647f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_dicionario</definition>
+        <argsstring>(DICIONARIO dc)</argsstring>
+        <name>print_dicionario</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref></type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>imprime o dicionario <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="93" column="1" bodyfile="projeto.c" bodystart="218" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a4083c5df010b9541bef0c69ac3953ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_palavra</definition>
+        <argsstring>(PALAVRA s)</argsstring>
+        <name>print_palavra</name>
+        <param>
+          <type><ref refid="structpalavra" kindref="compound">PALAVRA</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>imprime a palavra <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="94" column="1" bodyfile="projeto.c" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1ad8c102cc34859dd1b5ecfe4e65964f01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void estruturatab</definition>
+        <argsstring>(SOPALETRAS *tab, int linhas, int colunas)</argsstring>
+        <name>estruturatab</name>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref> *</type>
+          <declname>tab</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linhas</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colunas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>estrutura tabuleiro <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linhas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colunas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="98" column="1" bodyfile="projeto.c" bodystart="250" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a0f50d8b9c7683dc407b0afc35a2e6e5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcelula" kindref="compound">CELL</ref> *</type>
+        <definition>CELL* criar_celula</definition>
+        <argsstring>(int linha, int coluna)</argsstring>
+        <name>criar_celula</name>
+        <param>
+          <type>int</type>
+          <declname>linha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coluna</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cria celula <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coluna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="99" column="1" bodyfile="projeto.c" bodystart="361" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a30f6932e5eb28367966cea444b62e411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_matriz</definition>
+        <argsstring>(SOPALETRAS tab)</argsstring>
+        <name>print_matriz</name>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref></type>
+          <declname>tab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>imprime a matriz <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="100" column="1" bodyfile="projeto.c" bodystart="383" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a24e1fd185f81307cd8facb0036c2cbd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void leitura_matriz_carac_txt</definition>
+        <argsstring>(SOPALETRAS sopaletra, int linhas, int colunas)</argsstring>
+        <name>leitura_matriz_carac_txt</name>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref></type>
+          <declname>sopaletra</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linhas</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colunas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lê a matriz do ficheiro de texto <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sopaletra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linhas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colunas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="102" column="1" bodyfile="projeto.c" bodystart="412" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a174706599ce91e68266cfaca507b660d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int numero_colunas</definition>
+        <argsstring>()</argsstring>
+        <name>numero_colunas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>conta o numero de colunas <simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="103" column="1" bodyfile="projeto.c" bodystart="472" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1ab3e64ec09fcb519ce3d906ca7a2ea136" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int numero_linhas</definition>
+        <argsstring>()</argsstring>
+        <name>numero_linhas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>conta o numero de linhas <simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="104" column="1" bodyfile="projeto.c" bodystart="447" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a75788dbfd35b75ed2b2986ef8e5b5cea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref></type>
+        <definition>SOPALETRAS gerar_matriz_dicionario</definition>
+        <argsstring>(DICIONARIO dicionario)</argsstring>
+        <name>gerar_matriz_dicionario</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref></type>
+          <declname>dicionario</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gera aleatoriamente o dicionario <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dicionario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="108" column="1" bodyfile="projeto.c" bodystart="499" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1aa961f0530ec393b781a50753942a261f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int incrColDir</definition>
+        <argsstring>(int dir)</argsstring>
+        <name>incrColDir</name>
+        <param>
+          <type>int</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>incrementa coluna <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="109" column="1" bodyfile="projeto.c" bodystart="546" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1af497e1708012340c00314ad3a2194ecc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int incrLinDir</definition>
+        <argsstring>(int dir)</argsstring>
+        <name>incrLinDir</name>
+        <param>
+          <type>int</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>incrementa linha <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="110" column="1" bodyfile="projeto.c" bodystart="574" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1ab2916fa096aff8a581fc21b409e62dd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void escreveCelula</definition>
+        <argsstring>(SOPALETRAS sopaletra, int linha, int coluna, char c)</argsstring>
+        <name>escreveCelula</name>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref></type>
+          <declname>sopaletra</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coluna</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>escreve celula <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sopaletra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coluna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="111" column="1" bodyfile="projeto.c" bodystart="604" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a7cd431bbf15acf285dfec96c71cf2688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char leCelula</definition>
+        <argsstring>(SOPALETRAS sopaletra, int linha, int coluna)</argsstring>
+        <name>leCelula</name>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref></type>
+          <declname>sopaletra</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coluna</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>le celula <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sopaletra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coluna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="112" column="1" bodyfile="projeto.c" bodystart="623" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1ab93ab6417af9f796e3034f4147c8a82f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void estruturatabCharsAleat</definition>
+        <argsstring>(SOPALETRAS *tab, int linhas, int colunas)</argsstring>
+        <name>estruturatabCharsAleat</name>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref> *</type>
+          <declname>tab</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>linhas</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colunas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>estrutura de caracteres aleatorios <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linhas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colunas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="113" column="1" bodyfile="projeto.c" bodystart="656" bodyend="759"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a8b5c15bb31652441cd02b4ddafadb47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** gerar_matriz_aleatoria</definition>
+        <argsstring>(int *nlinhas, int *ncolunas)</argsstring>
+        <name>gerar_matriz_aleatoria</name>
+        <param>
+          <type>int *</type>
+          <declname>nlinhas</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>ncolunas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gera uma matriz aleatoria <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nlinhas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ncolunas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="114" column="1" bodyfile="projeto.c" bodystart="766" bodyend="784"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a6e99262ffbbd567667dcda0b43294dfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcelula" kindref="compound">CELL</ref> *</type>
+        <definition>CELL* criar_celulaCharsAleat</definition>
+        <argsstring>(int linha, int coluna)</argsstring>
+        <name>criar_celulaCharsAleat</name>
+        <param>
+          <type>int</type>
+          <declname>linha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coluna</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cria celula de caracteres aleatoria <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coluna</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="115" column="1" bodyfile="projeto.c" bodystart="642" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1ab8c652b056360ae0560968e5503562df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void retornar_caracteres</definition>
+        <argsstring>(SOPALETRAS sp)</argsstring>
+        <name>retornar_caracteres</name>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref></type>
+          <declname>sp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="117" column="1" bodyfile="projeto.c" bodystart="805" bodyend="887"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a769924b3b813558ad22e9941be0f7dfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcache" kindref="compound">CACHE</ref> *</type>
+        <definition>CACHE* recursiva</definition>
+        <argsstring>(CELL *aux, char direcoes[], CACHE *cac, char palavra[], CELL *celula, int rotacoes)</argsstring>
+        <name>recursiva</name>
+        <param>
+          <type><ref refid="structcelula" kindref="compound">CELL</ref> *</type>
+          <declname>aux</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>direcoes</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="structcache" kindref="compound">CACHE</ref> *</type>
+          <declname>cac</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>palavra</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="structcelula" kindref="compound">CELL</ref> *</type>
+          <declname>celula</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rotacoes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="119" column="1" bodyfile="projeto.c" bodystart="888" bodyend="959"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1affc2c1bbf821792588940d51c3645fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void main_recursiva</definition>
+        <argsstring>(DICIONARIO dic, SOPALETRAS sp)</argsstring>
+        <name>main_recursiva</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref></type>
+          <declname>dic</declname>
+        </param>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref></type>
+          <declname>sp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="120" column="1" bodyfile="projeto.c" bodystart="961" bodyend="1000"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1aff5e0810350856f5d1ca554aea2832f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int consistencia</definition>
+        <argsstring>(CELL *celula, char letra)</argsstring>
+        <name>consistencia</name>
+        <param>
+          <type><ref refid="structcelula" kindref="compound">CELL</ref> *</type>
+          <declname>celula</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>letra</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="121" column="1" bodyfile="projeto.c" bodystart="1002" bodyend="1009"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1aa7687aa3fe00a76f6a66b6d05b710ef7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcache" kindref="compound">CACHE</ref> *</type>
+        <definition>CACHE* criar_cache</definition>
+        <argsstring>()</argsstring>
+        <name>criar_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="122" column="1" bodyfile="projeto.c" bodystart="1011" bodyend="1016"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a7e920ac5574d1071abeb8e8a2161bdb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void guardar_palavras_txt</definition>
+        <argsstring>(DICIONARIO cs, char *fn)</argsstring>
+        <name>guardar_palavras_txt</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref></type>
+          <declname>cs</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="124" column="1" bodyfile="projeto.c" bodystart="1018" bodyend="1036"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a805864c091354afbb70dc6ad9bcc9c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void guardar_dcionario_bin</definition>
+        <argsstring>(DICIONARIO cs)</argsstring>
+        <name>guardar_dcionario_bin</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref></type>
+          <declname>cs</declname>
+          <defname>dc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>guarad em binario o dicionario</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="126" column="1" bodyfile="projeto.c" bodystart="1042" bodyend="1058"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a58844bf0cf4d7fbd3a989e71006c5b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_dicionario_bin</definition>
+        <argsstring>(DICIONARIO *pcs)</argsstring>
+        <name>ler_dicionario_bin</name>
+        <param>
+          <type><ref refid="structdicionario" kindref="compound">DICIONARIO</ref> *</type>
+          <declname>pcs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>le o ficheiro de dicionario binario <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pcs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="127" column="1" bodyfile="projeto.c" bodystart="1063" bodyend="1088"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a920870616d704000e0f8f9434fb1b3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gravar_sopa_de_letras_bin</definition>
+        <argsstring>(SOPALETRAS sp)</argsstring>
+        <name>gravar_sopa_de_letras_bin</name>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref></type>
+          <declname>sp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1a81494c0cb0b326a423bdf50a5c1c6d40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void guardar_sopa_bin</definition>
+        <argsstring>(SOPALETRAS sopa)</argsstring>
+        <name>guardar_sopa_bin</name>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref></type>
+          <declname>sopa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>guarda a sopa de letras em binario <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sopa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="130" column="1" bodyfile="projeto.c" bodystart="1093" bodyend="1115"/>
+      </memberdef>
+      <memberdef kind="function" id="projeto_8h_1afa37d596c0759fac9c29ed97e47c19e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler_sopa_bin</definition>
+        <argsstring>(SOPALETRAS *sp)</argsstring>
+        <name>ler_sopa_bin</name>
+        <param>
+          <type><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref> *</type>
+          <declname>sp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>le a sopa de letras do ficheiro binario <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="131" column="1" bodyfile="projeto.c" bodystart="1120" bodyend="1145"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>maria<sp/>on<sp/>04/01/2019.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PROJETOPARTE2_PROJETO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJETOPARTE2_PROJETO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;strings.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Max200<sp/><sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX50<sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINHAS<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLUNAS<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pontos<sp/>cardeais<sp/>(0-indefinido):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NORTE<sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NORDESTE<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESTE<sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUDESTE<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUL<sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUDOESTE<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OESTE<sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NORDOESTE<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mergesort/mergesort.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Fiename1<sp/>&quot;C:\\Users\\maria\\CLionProjects\\projetoparte2\\data\\dicionario.txt&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Filename2<sp/>&quot;C:\\Users\\maria\\CLionProjects\\projetoparte2\\data\\sopaletras.txt&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Fiename3<sp/>&quot;C:\\Users\\maria\\CLionProjects\\projetoparte2\\data\\dicionariobin.bin&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Filename4<sp/>&quot;C:\\Users\\maria\\CLionProjects\\projetoparte2\\data\\sopaletrasbin.bin&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Filename5<sp/>&quot;C:\\Users\\maria\\CLionProjects\\projetoparte2\\data\\palavrasguardadas.txt&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main_projeto2();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structcache" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcache" kindref="compound">cache</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*direcoes;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structpalavra" kindref="compound">palavra</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcache" kindref="compound">cache</ref><sp/>*next;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<ref refid="structcache" kindref="compound">CACHE</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structcelula" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcelula" kindref="compound">celula</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plinha;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pcoluna;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcelula" kindref="compound">celula</ref><sp/>*norte;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcelula" kindref="compound">celula</ref><sp/>*sul;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcelula" kindref="compound">celula</ref><sp/>*este;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcelula" kindref="compound">celula</ref><sp/>*oeste;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcelula" kindref="compound">celula</ref><sp/>*nordeste;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcelula" kindref="compound">celula</ref><sp/>*noroeste;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcelula" kindref="compound">celula</ref><sp/>*sudeste;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcelula" kindref="compound">celula</ref><sp/>*sudoeste;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>check;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcache" kindref="compound">cache</ref><sp/>*cache1;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<ref refid="structcelula" kindref="compound">CELL</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="structsopaletras" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsopaletras" kindref="compound">sopaletras</ref></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcelula" kindref="compound">CELL</ref><sp/>*pfirst;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}<ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structpalavra" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpalavra" kindref="compound">palavra</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Estrutura<sp/>para<sp/>cada<sp/>palavra<sp/>do<sp/>dicionário</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ppalavra;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Apontador<sp/>para<sp/>a<sp/>palvra</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpalavra" kindref="compound">palavra</ref><sp/>*next;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Apontador<sp/>para<sp/>a<sp/>palavra<sp/>a<sp/>seguir</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<ref refid="structpalavra" kindref="compound">PALAVRA</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Nome<sp/>da<sp/>estrutura</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="structdicionario" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdicionario" kindref="compound">dicionario</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Estrutura<sp/>para<sp/>o<sp/>dicionário<sp/>contém:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structpalavra" kindref="compound">palavra</ref>[MAX50];</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpalavra" kindref="compound">PALAVRA</ref><sp/>*pfirst;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Apontador<sp/>para<sp/>a<sp/>primeira<sp/>palavra<sp/>do<sp/>dicionário</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npalavras;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Número<sp/>de<sp/>palavras<sp/>que<sp/>o<sp/>dicionário<sp/>contém</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpalavra" kindref="compound">palavra</ref>*<sp/>cabeca;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpalavra" kindref="compound">palavra</ref>*<sp/>cauda;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<ref refid="structdicionario" kindref="compound">DICIONARIO</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R5A------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>inserir_palavras(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref><sp/>*cs);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>imprimir_dicionario_manual(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref><sp/>*<sp/><ref refid="structdicionario" kindref="compound">dicionario</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>inserir_queue(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref>*<sp/><ref refid="structdicionario" kindref="compound">dicionario</ref>,<sp/><ref refid="structpalavra" kindref="compound">PALAVRA</ref>*<sp/><ref refid="structpalavra" kindref="compound">palavra</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><ref refid="structpalavra" kindref="compound">PALAVRA</ref>*<sp/>imprimir_queue(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref>*<sp/><ref refid="structdicionario" kindref="compound">dicionario</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>converter_maiusculas(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<ref refid="structpalavra" kindref="compound">palavra</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R5B------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ler_dicionario_txt(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref><sp/>*pcs);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numero_palavras();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_dicionario(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref><sp/>dc);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_palavra(<ref refid="structpalavra" kindref="compound">PALAVRA</ref><sp/>s);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R6------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//mergesort</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R7------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>estruturatab(<ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref>*tab,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linhas,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colunas);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="structcelula" kindref="compound">CELL</ref>*<sp/>criar_celula(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_matriz(<ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref><sp/>tab);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R8A------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>leitura_matriz_carac_txt(<ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref><sp/>sopaletra,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linhas,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colunas);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numero_colunas();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numero_linhas();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R8B------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//matriz<sp/>aleatoria<sp/>garantindo<sp/>pelo<sp/>menos<sp/>uma<sp/>palavra</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R9------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref><sp/>gerar_matriz_dicionario(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref><sp/><ref refid="structdicionario" kindref="compound">dicionario</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>incrColDir(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dir<sp/>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>incrLinDir(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dir<sp/>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>escreveCelula(<sp/><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref><sp/>sopaletra,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c<sp/>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>leCelula(<sp/><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref><sp/>sopaletra,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna<sp/>);</highlight><highlight class="comment">//lê<sp/>celula</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>estruturatabCharsAleat(<ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref>*tab,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linhas,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colunas);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**gerar_matriz_aleatoria(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*nlinhas,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ncolunas);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><ref refid="structcelula" kindref="compound">CELL</ref>*<sp/>criar_celulaCharsAleat(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R10------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>retornar_caracteres(<ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref><sp/>sp);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R11------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><ref refid="structcache" kindref="compound">CACHE</ref><sp/>*recursiva(<ref refid="structcelula" kindref="compound">CELL</ref><sp/>*aux,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>direcoes[],<ref refid="structcache" kindref="compound">CACHE</ref><sp/>*cac,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structpalavra" kindref="compound">palavra</ref>[],<ref refid="structcelula" kindref="compound">CELL</ref><sp/>*<ref refid="structcelula" kindref="compound">celula</ref>,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rotacoes);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>main_recursiva(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref><sp/>dic,<sp/><ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref><sp/>sp);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>consistencia(<ref refid="structcelula" kindref="compound">CELL</ref><sp/>*<ref refid="structcelula" kindref="compound">celula</ref>,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letra);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><ref refid="structcache" kindref="compound">CACHE</ref><sp/>*<sp/>criar_cache();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R12------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>guardar_palavras_txt(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref><sp/>cs,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fn);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------R13------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>guardar_dcionario_bin(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref><sp/>cs);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ler_dicionario_bin(<ref refid="structdicionario" kindref="compound">DICIONARIO</ref><sp/>*pcs);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gravar_sopa_de_letras_bin(<ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref><sp/>sp);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>guardar_sopa_bin(<ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref><sp/>sopa);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ler_sopa_bin(<ref refid="structsopaletras" kindref="compound">SOPALETRAS</ref><sp/>*sp);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//PROJETOPARTE2_PROJETO_H</highlight></codeline>
+    </programlisting>
+    <location file="projeto.h"/>
+  </compounddef>
+</doxygen>

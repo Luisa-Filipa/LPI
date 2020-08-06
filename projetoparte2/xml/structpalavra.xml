@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structpalavra" kind="struct" language="C++" prot="public">
+    <compoundname>palavra</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpalavra_1afed088663f8704004425cdae2120b9b3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="70" column="1" bodyfile="projeto.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpalavra_1aac40bbaa9a1fa26b774aff5e9c4aed15" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* ppalavra</definition>
+        <argsstring></argsstring>
+        <name>ppalavra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="71" column="1" bodyfile="projeto.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpalavra_1afded7ecacbe32cc40415aedd391f6bda" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpalavra" kindref="compound">palavra</ref> *</type>
+        <definition>struct palavra* next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="72" column="1" bodyfile="projeto.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>palavra</label>
+        <link refid="structpalavra"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="projeto.h" line="69" column="1" bodyfile="projeto.h" bodystart="68" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structpalavra_1afed088663f8704004425cdae2120b9b3" prot="public" virt="non-virtual"><scope>palavra</scope><name>len</name></member>
+      <member refid="structpalavra_1afded7ecacbe32cc40415aedd391f6bda" prot="public" virt="non-virtual"><scope>palavra</scope><name>next</name></member>
+      <member refid="structpalavra_1aac40bbaa9a1fa26b774aff5e9c4aed15" prot="public" virt="non-virtual"><scope>palavra</scope><name>ppalavra</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

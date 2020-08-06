@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcache" kind="struct" language="C++" prot="public">
+    <compoundname>cache</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcache_1a52e03f2ee996fd6c923b9d027d819117" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* direcoes</definition>
+        <argsstring></argsstring>
+        <name>direcoes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="37" column="1" bodyfile="projeto.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcache_1a649b161fdcdbc787b4cb3014fd06f3de" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* palavra</definition>
+        <argsstring></argsstring>
+        <name>palavra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="38" column="1" bodyfile="projeto.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcache_1afc4d94a39a30717bf64edd5eac601e66" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcache" kindref="compound">cache</ref> *</type>
+        <definition>struct cache* next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="39" column="1" bodyfile="projeto.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>cache</label>
+        <link refid="structcache"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="projeto.h" line="36" column="1" bodyfile="projeto.h" bodystart="35" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structcache_1a52e03f2ee996fd6c923b9d027d819117" prot="public" virt="non-virtual"><scope>cache</scope><name>direcoes</name></member>
+      <member refid="structcache_1afc4d94a39a30717bf64edd5eac601e66" prot="public" virt="non-virtual"><scope>cache</scope><name>next</name></member>
+      <member refid="structcache_1a649b161fdcdbc787b4cb3014fd06f3de" prot="public" virt="non-virtual"><scope>cache</scope><name>palavra</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

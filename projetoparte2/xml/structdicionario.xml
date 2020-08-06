@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structdicionario" kind="struct" language="C++" prot="public">
+    <compoundname>dicionario</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdicionario_1ac203eb6689c560004286a1aae79f6ee0" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char palavra[MAX50]</definition>
+        <argsstring>[MAX50]</argsstring>
+        <name>palavra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="77" column="1" bodyfile="projeto.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdicionario_1a9bd01e56e3ef2f53753ec66a690a9e3c" prot="public" static="no" mutable="no">
+        <type><ref refid="structpalavra" kindref="compound">PALAVRA</ref> *</type>
+        <definition>PALAVRA* pfirst</definition>
+        <argsstring></argsstring>
+        <name>pfirst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="78" column="1" bodyfile="projeto.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdicionario_1a0436e0c08968016a090b118d46fc1228" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int npalavras</definition>
+        <argsstring></argsstring>
+        <name>npalavras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="79" column="1" bodyfile="projeto.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdicionario_1a40a66dc2b4ef7613fde48039945d2345" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpalavra" kindref="compound">palavra</ref> *</type>
+        <definition>struct palavra* cabeca</definition>
+        <argsstring></argsstring>
+        <name>cabeca</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="80" column="1" bodyfile="projeto.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdicionario_1ae8fd6545428992ecc752e7c7c67f6533" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpalavra" kindref="compound">palavra</ref> *</type>
+        <definition>struct palavra* cauda</definition>
+        <argsstring></argsstring>
+        <name>cauda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="81" column="1" bodyfile="projeto.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>palavra</label>
+        <link refid="structpalavra"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dicionario</label>
+        <link refid="structdicionario"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>pfirst</edgelabel>
+          <edgelabel>cauda</edgelabel>
+          <edgelabel>cabeca</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="projeto.h" line="76" column="1" bodyfile="projeto.h" bodystart="75" bodyend="82"/>
+    <listofallmembers>
+      <member refid="structdicionario_1a40a66dc2b4ef7613fde48039945d2345" prot="public" virt="non-virtual"><scope>dicionario</scope><name>cabeca</name></member>
+      <member refid="structdicionario_1ae8fd6545428992ecc752e7c7c67f6533" prot="public" virt="non-virtual"><scope>dicionario</scope><name>cauda</name></member>
+      <member refid="structdicionario_1a0436e0c08968016a090b118d46fc1228" prot="public" virt="non-virtual"><scope>dicionario</scope><name>npalavras</name></member>
+      <member refid="structdicionario_1ac203eb6689c560004286a1aae79f6ee0" prot="public" virt="non-virtual"><scope>dicionario</scope><name>palavra</name></member>
+      <member refid="structdicionario_1a9bd01e56e3ef2f53753ec66a690a9e3c" prot="public" virt="non-virtual"><scope>dicionario</scope><name>pfirst</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

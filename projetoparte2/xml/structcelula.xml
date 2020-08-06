@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structcelula" kind="struct" language="C++" prot="public">
+    <compoundname>celula</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcelula_1adc08ed1554f35803d229aeaf11216b3f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="45" column="1" bodyfile="projeto.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1ad087ee05bb7acc813fe618e1bce1e2a0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int plinha</definition>
+        <argsstring></argsstring>
+        <name>plinha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="46" column="1" bodyfile="projeto.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1aec034fbbf4a74e9d88c5e90231015aef" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pcoluna</definition>
+        <argsstring></argsstring>
+        <name>pcoluna</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="47" column="1" bodyfile="projeto.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1a9fd26f085619bfe7ed15fb49f16c69cf" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcelula" kindref="compound">celula</ref> *</type>
+        <definition>struct celula* norte</definition>
+        <argsstring></argsstring>
+        <name>norte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="48" column="1" bodyfile="projeto.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1a46c557ea39bebedf242f130a310fdf89" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcelula" kindref="compound">celula</ref> *</type>
+        <definition>struct celula* sul</definition>
+        <argsstring></argsstring>
+        <name>sul</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="49" column="1" bodyfile="projeto.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1a8e4bec791986b904658caf1fd27e7282" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcelula" kindref="compound">celula</ref> *</type>
+        <definition>struct celula* este</definition>
+        <argsstring></argsstring>
+        <name>este</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="50" column="1" bodyfile="projeto.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1adcc44608a7aac574069c229b90cc2208" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcelula" kindref="compound">celula</ref> *</type>
+        <definition>struct celula* oeste</definition>
+        <argsstring></argsstring>
+        <name>oeste</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="51" column="1" bodyfile="projeto.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1ae50d46616d23fbbcf9c801477932475f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcelula" kindref="compound">celula</ref> *</type>
+        <definition>struct celula* nordeste</definition>
+        <argsstring></argsstring>
+        <name>nordeste</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="52" column="1" bodyfile="projeto.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1aa82be877b08e62255fbe7f8266303365" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcelula" kindref="compound">celula</ref> *</type>
+        <definition>struct celula* noroeste</definition>
+        <argsstring></argsstring>
+        <name>noroeste</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="53" column="1" bodyfile="projeto.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1acc4a3924ba464470317b98b49df837c6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcelula" kindref="compound">celula</ref> *</type>
+        <definition>struct celula* sudeste</definition>
+        <argsstring></argsstring>
+        <name>sudeste</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="54" column="1" bodyfile="projeto.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1a47a954c4e06fb1d4652de3bb35216ddb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcelula" kindref="compound">celula</ref> *</type>
+        <definition>struct celula* sudoeste</definition>
+        <argsstring></argsstring>
+        <name>sudoeste</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="55" column="1" bodyfile="projeto.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1a5aa1731610537e057191db627c19f1ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int check</definition>
+        <argsstring></argsstring>
+        <name>check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="56" column="1" bodyfile="projeto.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcelula_1a308f3964ab5a8295d510d949f1abb951" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structcache" kindref="compound">cache</ref> *</type>
+        <definition>struct cache* cache1</definition>
+        <argsstring></argsstring>
+        <name>cache1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="projeto.h" line="57" column="1" bodyfile="projeto.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>celula</label>
+        <link refid="structcelula"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sul</edgelabel>
+          <edgelabel>oeste</edgelabel>
+          <edgelabel>noroeste</edgelabel>
+          <edgelabel>sudoeste</edgelabel>
+          <edgelabel>norte</edgelabel>
+          <edgelabel>sudeste</edgelabel>
+          <edgelabel>nordeste</edgelabel>
+          <edgelabel>este</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>cache1</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cache</label>
+        <link refid="structcache"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="projeto.h" line="44" column="1" bodyfile="projeto.h" bodystart="43" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structcelula_1adc08ed1554f35803d229aeaf11216b3f" prot="public" virt="non-virtual"><scope>celula</scope><name>c</name></member>
+      <member refid="structcelula_1a308f3964ab5a8295d510d949f1abb951" prot="public" virt="non-virtual"><scope>celula</scope><name>cache1</name></member>
+      <member refid="structcelula_1a5aa1731610537e057191db627c19f1ca" prot="public" virt="non-virtual"><scope>celula</scope><name>check</name></member>
+      <member refid="structcelula_1a8e4bec791986b904658caf1fd27e7282" prot="public" virt="non-virtual"><scope>celula</scope><name>este</name></member>
+      <member refid="structcelula_1ae50d46616d23fbbcf9c801477932475f" prot="public" virt="non-virtual"><scope>celula</scope><name>nordeste</name></member>
+      <member refid="structcelula_1aa82be877b08e62255fbe7f8266303365" prot="public" virt="non-virtual"><scope>celula</scope><name>noroeste</name></member>
+      <member refid="structcelula_1a9fd26f085619bfe7ed15fb49f16c69cf" prot="public" virt="non-virtual"><scope>celula</scope><name>norte</name></member>
+      <member refid="structcelula_1adcc44608a7aac574069c229b90cc2208" prot="public" virt="non-virtual"><scope>celula</scope><name>oeste</name></member>
+      <member refid="structcelula_1aec034fbbf4a74e9d88c5e90231015aef" prot="public" virt="non-virtual"><scope>celula</scope><name>pcoluna</name></member>
+      <member refid="structcelula_1ad087ee05bb7acc813fe618e1bce1e2a0" prot="public" virt="non-virtual"><scope>celula</scope><name>plinha</name></member>
+      <member refid="structcelula_1acc4a3924ba464470317b98b49df837c6" prot="public" virt="non-virtual"><scope>celula</scope><name>sudeste</name></member>
+      <member refid="structcelula_1a47a954c4e06fb1d4652de3bb35216ddb" prot="public" virt="non-virtual"><scope>celula</scope><name>sudoeste</name></member>
+      <member refid="structcelula_1a46c557ea39bebedf242f130a310fdf89" prot="public" virt="non-virtual"><scope>celula</scope><name>sul</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
